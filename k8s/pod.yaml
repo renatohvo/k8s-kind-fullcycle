@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: goserver
+  labels:
+    app.kubernetes.io/name: goserver
+spec:
+  containers:
+  - name: goserver
+    image: renatohvo/hello-go:latest
