@@ -89,3 +89,30 @@ kubectl get replicasets
 ```sh
 kubectl delete replicaset goserver
 ```
+
+## Deployments
+
+- Apply Deployment
+
+```sh
+kubectl apply -f k8s/deployment.yaml
+```
+
+- Port Forward Deployment - [http://localhost:8080](http://localhost:8080)
+
+```sh
+kubectl port-forward deployment/goserver 8080:8080
+```
+
+- Get  Deployments
+
+```sh
+kubectl get deployment
+kubectl get deployments
+```
+
+- Delete Deployment (goserver)
+
+```sh
+kubectl delete deployment goserver
+```
