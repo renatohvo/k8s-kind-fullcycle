@@ -116,3 +116,27 @@ kubectl get deployments
 ```sh
 kubectl delete deployment goserver
 ```
+
+- Rollout History Deployment (goserver)
+
+```sh
+kubectl rollout history deployment goserver
+```
+
+- Rollout Deployment (goserver)
+
+```sh
+kubectl rollout undo deployment goserver
+```
+
+- Rollout To Revision "2" Deployment (goserver)
+
+```sh
+kubectl rollout undo deployment goserver --to-revision=2
+```
+
+- Describe Deployment (goserver)
+
+```sh
+kubectl describe deployments goserver
+```
