@@ -140,3 +140,15 @@ kubectl rollout undo deployment goserver --to-revision=2
 ```sh
 kubectl describe deployments goserver
 ```
+
+- Apply Service
+
+```sh
+kubectl apply -f k8s/service.yaml
+```
+
+- Port Forward Service - [http://localhost:9000](http://localhost:9000)
+
+```sh
+kubectl port-forward svc/goserver-service 9000:8000
+```
